@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* header section */
+        #header_container {
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .pages {
+            color: white;
+            margin: 0px 30px 0px 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .pages:hover {
+            font-style: italic;
+            color: rgb(151, 165, 177);
+            border-bottom: 5px solid rgb(255, 255, 255);
+            padding-bottom: 25px;
+
+        }
+
+        /* poster section */
+        #poster_main_sec {
+            height: 600px;
+            margin-top: 40px;
+        }
+
+        /* about section */
+        #about_main_sec {
+            padding: 90px 40px 90px 40px;
+            text-align: center;
+
+        }
+
+        .heading_about {
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: red;
+
+        }
+
+        #about_para {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        #about_para::first-letter {
+            font-size: 40px;
+
+        }
+
+        /* Services section start */
+        #services_main_sec {
+            height: 600px;
+            background-color: black;
+            padding-top: 90px;
+        }
+
+        #boxes_sec {
+
+            display: flex;
+            justify-content: space-around;
+             flex-wrap: wrap;
+        }
+
+        .box {
+            /* border: 2px solid white; */
+            width: 300px;
+            height: 350px;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+           
+        }
+
+        .box:hover {
+            background-color: rgb(86, 255, 170);
+        }
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            text-align: center;
+        }
+
+        .course_heading {
+            /* color: white; */
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .box_para {
+            color: rgb(116, 116, 116);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 23px;
+        }
+
+        .box_button {
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .box_button:hover {
+            background-color: black;
+        }
+
+        /* contact Us start */
+        #contact_main_sec {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #contact_form {
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            border-radius: 15px;
+            padding: 50px;
+        }
+
+        ._inputs {
+            height: 30px;
+            width: 289px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            /* font-weight: bold; */
+            padding-left: 10px;
+        }
+
+        textarea {
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+
+        #submit_btn_contact {
+            height: 40px;
+            width: 150px;
+            margin-top: 40px;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        #footer{
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer_para{
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header_container">
+        <div>
+            <a class="pages" href="#header_container">Home</a>
+            <a class="pages" href="#about_main_sec">About</a>
+            <a class="pages" href="#">Services</a>
+            <a class="pages" href="#">Contact</a>
+
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- poster start -->
+    <div id="poster_main_sec">
+        <img src="./images/Talkgpt _1024_500.jpg" height="600px" width="100%" alt="">
+
+    </div>
+    <!-- poster end -->
+    <!-- about us -->
+    <div id="about_main_sec">
+        <h1 class="heading_about">
+            About Us
+        </h1>
+        <p id="about_para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ullam delectus minus, illo asperiores atque
+            voluptatum possimus, facere, aperiam saepe dolorem incidunt exercitationem. Corporis reiciendis fugit
+            eligendi placeat facere cupiditate?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo exercitationem, non eaque dolorum
+            consequuntur maxime voluptas porro aliquam iure et eveniet vel obcaecati facilis repudiandae quo officiis
+            aliquid veritatis ducimus.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus iste officia dignissimos quo expedita
+            incidunt ullam repellendus velit explicabo repellat eum veniam quos id laborum, ipsam atque vero? Facere,
+            doloremque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nisi totam ad cum, maxime expedita temporibus
+            esse aut aliquam quos? Quasi, adipisci obcaecati iste necessitatibus reiciendis fugit ex sit consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui nostrum molestias consequuntur? Commodi
+            qui, ipsum quae dicta earum voluptatum cupiditate, nesciunt, tempore totam iure exercitationem asperiores
+            ipsa optio similique?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ea, laboriosam quis qui odit, quia sunt
+            culpa error ratione officiis nostrum eveniet quasi voluptatem expedita illo perspiciatis similique iure ex.
+        </p>
+
+    </div>
+    <!-- about end -->
+    <!-- services section start -->
+    <div id="services_main_sec">
+
+
+        <h1 class="heading_about" style="color: white;">
+            Services
+        </h1>
+        <div id="boxes_sec">
+            <!-- box 1 -->
+            <div class="box">
+                <img class="logo" src="./images/app_logo-removebg-preview.png" alt="">
+                <h3 class="course_heading">HTML</h3>
+                <p class="box_para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto, repellendus eum
+                    distinctio id sed illo iure animi, quo aliquam odit nam! Hic ratione, officiis enim quo voluptate
+                    omnis aspernatur.
+                </p>
+                <button class="box_button">Register Now</button>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <img class="logo" src="./images/app_logo-removebg-preview.png" alt="">
+                <h3 class="course_heading">CSS</h3>
+                <p class="box_para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto, repellendus eum
+                    distinctio id sed illo iure animi, quo aliquam odit nam! Hic ratione, officiis enim quo voluptate
+                    omnis aspernatur.
+                </p>
+                <button class="box_button">Register Now</button>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <img class="logo" src="./images/app_logo-removebg-preview.png" alt="">
+                <h3 class="course_heading">Js</h3>
+                <p class="box_para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto, repellendus eum
+                    distinctio id sed illo iure animi, quo aliquam odit nam! Hic ratione, officiis enim quo voluptate
+                    omnis aspernatur.
+                </p>
+                <button class="box_button">Register Now</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- services section end -->
+    <!-- contact us start -->
+    <div id="contact_main_sec">
+
+        <h1 class="heading_about">
+            <br /><br />
+            Contact Us
+        </h1>
+
+        <form id="contact_form" action="./index.html" method="post">
+            <input class="_inputs" type="text" name="name" placeholder="enter your name">
+            <input class="_inputs" type="email" name="email" placeholder="enter your email">
+            <textarea rows="5" cols="37" name="comment" placeholder="enter your comment"></textarea>
+            <input id="submit_btn_contact" type="submit">
+        </form>
+    </div>
+    <!-- cntact us end -->
+
+    <!-- footer start -->
+     <div id="footer">
+        <p id="footer_para"> &copy; copy right by nitesh sutar</p>
+     </div>
+        <!-- footer end -->
+
+
+
+</body>
+
+</html>
